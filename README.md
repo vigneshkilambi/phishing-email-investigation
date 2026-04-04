@@ -41,6 +41,7 @@ This project demonstrates a real-world phishing email investigation conducted in
 * Confirmed spoofed phishing email
 
 ![Header Analysis](screenshots/header_analysis.png)
+*Shows failed authentication checks confirming spoofed email*
 
 ---
 
@@ -59,6 +60,7 @@ This project demonstrates a real-world phishing email investigation conducted in
 * Domain resolution confirms attacker-controlled infrastructure
 
 ![DNS Analysis](screenshots/dns_analysis.png)
+*Shows DNS query to malicious domain `servervirto.com.co`*
 
 ---
 
@@ -69,6 +71,16 @@ This project demonstrates a real-world phishing email investigation conducted in
 * Indicates credential harvesting activity
 
 ![HTTP Analysis](screenshots/http_analysis.png)
+*Shows HTTP request and retrieval of malicious JavaScript file*
+
+---
+
+## 🔎 Key Findings
+
+* The email was confirmed as a phishing attempt due to domain spoofing and failed authentication checks
+* Malicious domain `servervirto.com.co` was contacted via DNS and HTTP
+* JavaScript file (`loginDialog.js`) indicates credential harvesting behavior
+* Network traffic confirms communication with attacker-controlled infrastructure
 
 ---
 
@@ -93,6 +105,16 @@ Credentials captured
 * T1566 – Phishing
 * T1204 – User Execution
 * T1071 – Web Communication
+
+---
+
+## 🧠 Skills Demonstrated
+
+* Email Threat Analysis
+* IOC Extraction & Analysis
+* Network Traffic Analysis (Wireshark)
+* Threat Detection & Investigation
+* MITRE ATT&CK Mapping
 
 ---
 
@@ -138,7 +160,14 @@ Due to security considerations, the PCAP file containing simulated malicious tra
 
 This project contains simulated phishing and malicious network traffic generated in a controlled lab environment (Kali Linux).
 It is intended strictly for educational and research purposes only.
-All analysis was performed in an isolated environment to ensure safety.
+All analysis was conducted in an isolated environment to safely handle malicious artifacts.
+
+---
+
+## ✅ Conclusion
+
+The phishing attack was successfully identified by correlating email analysis with network traffic data.
+The investigation confirmed credential harvesting behavior through malicious JavaScript delivery, demonstrating how phishing attacks leverage both social engineering and network-based techniques.
 
 ---
 
