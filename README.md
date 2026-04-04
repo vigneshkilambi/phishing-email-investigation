@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-This project demonstrates a real-world phishing email investigation conducted in a SOC environment. The analysis includes email inspection, header analysis, IOC extraction, and network traffic investigation using Wireshark to identify malicious activity and potential credential harvesting.
+This project demonstrates a real-world phishing email investigation conducted in a SOC environment. The analysis includes email inspection, header analysis, IOC extraction, and network traffic investigation using Wireshark to identify malicious activity and credential harvesting behavior.
 
 ---
 
@@ -24,17 +24,23 @@ This project demonstrates a real-world phishing email investigation conducted in
 
 * Identified suspicious sender email (domain mismatch)
 * Detected malicious link embedded in email content
-* Observed social engineering techniques to trick the user
+* Observed social engineering techniques used to trigger user action
 
-### 📨 Email Header Analysis
+---
+
+### 📨 Email Header Analysis (MXToolbox)
 
 * SPF, DKIM, and DMARC authentication failed
 * Sender IP identified as suspicious
 * Confirmed spoofed phishing email
 
+![Header Analysis](screenshots/header_analysis.png)
+
+---
+
 ### 🧪 IOC Extraction
 
-* Extracted malicious indicators from email and traffic
+* Extracted malicious indicators from email and network traffic
 * Identified domains, IP address, URL, and file involved
 
 ---
@@ -44,7 +50,7 @@ This project demonstrates a real-world phishing email investigation conducted in
 ### DNS Analysis
 
 * Observed DNS query for malicious domain
-* Domain resolution confirms attacker infrastructure
+* Domain resolution confirms attacker-controlled infrastructure
 
 ![DNS Analysis](screenshots/dns_analysis.png)
 
@@ -54,7 +60,7 @@ This project demonstrates a real-world phishing email investigation conducted in
 
 * Detected HTTP request to phishing domain
 * JavaScript file retrieved (`loginDialog.js`)
-* Indicates credential harvesting behavior
+* Indicates credential harvesting activity
 
 ![HTTP Analysis](screenshots/http_analysis.png)
 
@@ -88,7 +94,7 @@ Credentials captured
 
 * Credential theft possible
 * Unauthorized account access
-* Risk of sensitive data compromise
+* Sensitive data compromise
 
 ---
 
@@ -109,7 +115,8 @@ Credentials captured
 
 * Phishing email sample (.eml)
 * Extracted IOCs
-* Wireshark network traffic screenshots
+* MXToolbox header analysis screenshots
+* Wireshark DNS & HTTP analysis screenshots
 
 ---
 
