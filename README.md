@@ -37,18 +37,26 @@ This project demonstrates a real-world phishing email investigation conducted in
 * Extracted malicious indicators from email and traffic
 * Identified domains, IP address, URL, and file involved
 
-### 🌐 Network Traffic Analysis (Wireshark)
+---
 
-#### DNS Analysis
+## 🌐 Network Traffic Analysis (Wireshark)
+
+### DNS Analysis
 
 * Observed DNS query for malicious domain
 * Domain resolution confirms attacker infrastructure
 
-#### HTTP Analysis
+![DNS Analysis](screenshots/dns_analysis.png)
+
+---
+
+### HTTP Analysis
 
 * Detected HTTP request to phishing domain
 * JavaScript file retrieved (`loginDialog.js`)
 * Indicates credential harvesting behavior
+
+![HTTP Analysis](screenshots/http_analysis.png)
 
 ---
 
@@ -102,25 +110,6 @@ Credentials captured
 * Phishing email sample (.eml)
 * Extracted IOCs
 * Wireshark network traffic screenshots
-
----
-
-## 📁 Project Structure
-
-phishing-email-investigation/
-│
-├── README.md
-├── Phishing_Email_Investigation.pptx
-│
-├── email-sample/
-│   └── phishing_sample.eml
-│
-├── ioc/
-│   └── iocs.txt
-│
-├── screenshots/
-│
-└── pcap/ (optional)
 
 ---
 
