@@ -4,6 +4,12 @@
 
 ---
 
+## 📌 Description
+
+Phishing email investigation with header analysis, IOC extraction, and Wireshark-based network traffic analysis performed in a controlled SOC lab environment.
+
+---
+
 ## 📌 Overview
 
 This project demonstrates a real-world phishing email investigation conducted in a SOC environment. The analysis includes email inspection, header analysis, IOC extraction, and network traffic investigation using Wireshark to identify malicious activity and credential harvesting behavior.
@@ -117,6 +123,22 @@ Credentials captured
 * Extracted IOCs
 * MXToolbox header analysis screenshots
 * Wireshark DNS & HTTP analysis screenshots
+
+---
+
+## 📂 PCAP File
+
+Due to security considerations, the PCAP file containing simulated malicious traffic is hosted externally:
+
+🔗 [Download PCAP](PASTE-YOUR-GOOGLE-DRIVE-LINK-HERE)
+
+---
+
+## ⚠️ Disclaimer
+
+This project contains simulated phishing and malicious network traffic generated in a controlled lab environment (Kali Linux).
+It is intended strictly for educational and research purposes only.
+All analysis was performed in an isolated environment to ensure safety.
 
 ---
 
